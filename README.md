@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
-##See Demo
+## See Demo
 
 See demo in: http://angular-admin-screen.surge.sh
 
