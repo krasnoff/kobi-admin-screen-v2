@@ -3,11 +3,24 @@
     <nav class="navbar navbar-default navbar-static-top" role="navigation" id="topNav">
         <div class="navbar-header">
             <a class="navbar-brand" href="index.html">Kobi Admin Screen</a>
-            &nbsp;
-            <i class="fa fa-user fa-fw"></i>
           </div>
           <button type="button" class="navbar-toggle">
               <i class="fas fa-bars"></i>
           </button>
+
+          <ul class="nav navbar-top-links navbar-right" >
+
+            <li class="dropdown" placement="bottom-right">
+                <span class="dropdown-toggle admin-dropdown-toggle user-clickable" id="drp-user" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="text-decoration: none;">
+                  <i class="fa fa-user fa-fw"></i>
+                </span>
+                <div class="dropdown-menu dropdown-user admin-dropdown-user dropdown-menu-right"  aria-labelledby="drp-user">
+                    <span class="dropdown-item"><i class="fas fa-user"></i> User Profile</span>
+                    <span class="dropdown-item" (click)="open(content)"><i class="fas fa-cog"></i> Settings</span>
+                    <div class="dropdown-divider"></div>
+                    <span class="dropdown-item" (click)="logout()"><i class="fas fa-sign-out-alt"></i> Logout</span>
+                </div>
+              </li>
+          </ul>
     </nav>
 </div>

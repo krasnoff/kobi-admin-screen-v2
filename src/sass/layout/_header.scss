@@ -1,0 +1,95 @@
+.navbar{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.navbar-header
+{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.navbar-default
+{
+    background-color: $background-color;
+    border-bottom: $border;
+}
+
+.navbar-static-top {
+    z-index: 1000;
+    border-width: 0 0 1px;
+
+    @media (min-width: $screen-width) {
+        border-radius: 0;
+    }
+}
+
+.navbar-toggle
+{
+    @media (max-width: $screen-width) {
+        float: right;
+    }
+
+    @media (min-width: $screen-width) {
+        display: none;
+    }
+}
+
+.admin-dropdown-toggle
+{
+    padding-left: 1.5em;
+    text-decoration: none;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.admin-dropdown-user
+{
+    font-size: 0.9em; 
+    
+    i {
+        font-family: fontAwesome;
+        font-style: normal;
+    }
+}
+
+.admin-dropdown-user-mail
+{
+    width: 290px;
+    font-size: 0.9em;   
+
+    .mail-text
+    {
+        white-space: normal;
+    }
+
+    .from
+    {
+        font-weight: 700;
+        width: 49%;
+        float: left;
+    }
+
+    .date
+    {
+        font-style: italic;
+        width: 49%;
+        float: right;
+        text-align: right;
+    }
+
+    .readAllItems
+    {
+        font-weight: 700;
+        text-align: center;
+    }
+}
+
+.user-clickable {
+    cursor: pointer;
+    color: #007bff;
+
+    &:hover {
+        color: #005683;
+    }
+}
