@@ -1,3 +1,46 @@
+#topNav
+{
+    .fas
+    {
+        font-family: fontAwesome;
+        font-style: normal;
+    }
+
+    button
+    {
+        cursor: pointer;
+    }
+
+    .user-clickable {
+        cursor: pointer;
+        color: #007bff;
+    
+        &:hover {
+            color: #005683;
+        }
+    }
+
+    .dropdown-item
+    {
+        &:hover {
+            background-color: $hover-background-color;
+        }
+    }
+
+    .dropdown-menu
+    {
+        &.show
+        {
+            top: 40px;
+        }
+    }
+
+    .dropdown
+    {
+        padding-right: 1.0em;
+    }
+}
+
 .navbar{
     padding-top: 0;
     padding-bottom: 0;
@@ -35,7 +78,7 @@
     }
 }
 
-.admin-dropdown-toggle
+/*.admin-dropdown-toggle
 {
     padding-left: 1.5em;
     text-decoration: none;
@@ -92,4 +135,4 @@
     &:hover {
         color: #005683;
     }
-}
+}*/
