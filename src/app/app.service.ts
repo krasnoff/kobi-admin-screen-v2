@@ -19,5 +19,4 @@ export class AppService {
     
     return this._http.get(url, { headers: headers }).pipe(map(res => res.json()))
   }
-
 }
