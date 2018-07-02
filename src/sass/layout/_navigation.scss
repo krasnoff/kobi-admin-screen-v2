@@ -1,0 +1,54 @@
+.sidebar {
+    border-right: $border;
+    width: 350px;
+    height: 100vh;
+    padding-left: 0px;
+    padding-right: 0px;
+
+    .nav-item
+    {
+        border-bottom: $border;
+    }
+
+    .sub-item {
+        padding-left: 23px;
+        display: none;
+    }
+
+    .active {
+        display: block;
+    }
+
+    @media (max-width: $screen-width) {
+        height: auto;
+    }
+
+    .fab, .far, .fas 
+    {
+        font-family: fontAwesome;
+        font-style: normal;
+    }
+}
+
+.navbar-right
+{
+    @media (max-width: $screen-width) {
+        width: 100%;
+
+        .dropdown-menu
+        {
+            left: 0px !important;
+        }
+    }
+}
+
+.navbar-toggle
+{
+    @media (max-width: $screen-width) {
+        float: right;
+    }
+
+    @media (min-width: $screen-width) {
+        display: none;
+    }
+}

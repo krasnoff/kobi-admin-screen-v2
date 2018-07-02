@@ -9,6 +9,12 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 
 import { GlobalDataService } from './global-data.service';
 
+import { RouterModule, Routes } from '@angular/router';
+
+const routes: Routes = [
+  
+];
+
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, "i18n/", ".json");
 }
@@ -27,7 +33,8 @@ export function HttpLoaderFactory(http: HttpClient) {
           useFactory: HttpLoaderFactory,
           deps: [HttpClient]
       }
-  })
+    }),
+    RouterModule.forRoot(routes)
   ],
   providers: [GlobalDataService],
   bootstrap: [AppComponent]
