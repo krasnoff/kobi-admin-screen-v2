@@ -23,10 +23,19 @@
         height: auto;
     }
 
-    .fab, .far, .fas 
+    .far, .fas 
     {
-        font-family: fontAwesome;
+        font-family: "Font Awesome 5 Free";
         font-style: normal;
+    }
+
+    .user-clickable {
+        cursor: pointer;
+        color: #007bff;
+    
+        &:hover {
+            color: #005683;
+        }
     }
 }
 
